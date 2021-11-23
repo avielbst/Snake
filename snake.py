@@ -133,24 +133,8 @@ apple_x = random.randint(-280, 280)
 apple_y = random.randint(-280, 280)
 apples.setpos(apple_x, apple_y)
 
-## Check for collision between snake and apples
+## Starting difficulity
 dif = 0
-#def isCollision(t1, t2):
-    #global dif
-    #global score
-    #distance = math.sqrt((player_snake.ycor() - apples.ycor())**2 + (player_snake.xcor() - apples.xcor())**2)
-    #if distance < 20:
-    #if player_snake.distance(apples) < 20:
-      #  dif += 0.2
-       # apples.hideturtle()
-        #apples.setposition(random.randint(-280, 280), random.randint(-280, 280))
-        #apples.showturtle()
-        #score += 10
-        #score_update(score)
-
-        
-        
-        
 
 
 ## Make a function for score updating
@@ -164,10 +148,6 @@ def score_update(score):
     score_pen.write(f"Score: {score} High score: {highscore}")
     score_pen.penup()
     
-    
-
-
-
 
 
 ## Main game loop
@@ -221,8 +201,6 @@ while True:
     time.sleep(0.015)
     
     
-        
-    ##isCollision(player_snake, apples)
         
 
     
